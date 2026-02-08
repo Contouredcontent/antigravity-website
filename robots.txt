@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://contouredcontent.com/sitemap.xml
