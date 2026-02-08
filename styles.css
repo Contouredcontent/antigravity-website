@@ -58,6 +58,7 @@
    ACCESSIBILITY: Reduced Motion
    ========================================= */
 @media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {
@@ -345,7 +346,8 @@ h5 {
 }
 
 /* Premium body text readability */
-p, li {
+p,
+li {
     line-height: 1.8;
 }
 
@@ -2694,25 +2696,67 @@ p, li {
 }
 
 /* Staggered Reveal Animations */
-.reveal.stagger-1 { transition-delay: 0.1s; }
-.reveal.stagger-2 { transition-delay: 0.2s; }
-.reveal.stagger-3 { transition-delay: 0.3s; }
-.reveal.stagger-4 { transition-delay: 0.4s; }
-.reveal.stagger-5 { transition-delay: 0.5s; }
-.reveal.stagger-6 { transition-delay: 0.6s; }
+.reveal.stagger-1 {
+    transition-delay: 0.1s;
+}
+
+.reveal.stagger-2 {
+    transition-delay: 0.2s;
+}
+
+.reveal.stagger-3 {
+    transition-delay: 0.3s;
+}
+
+.reveal.stagger-4 {
+    transition-delay: 0.4s;
+}
+
+.reveal.stagger-5 {
+    transition-delay: 0.5s;
+}
+
+.reveal.stagger-6 {
+    transition-delay: 0.6s;
+}
 
 /* Service cards stagger */
-.service-card:nth-child(1) { transition-delay: 0s; }
-.service-card:nth-child(2) { transition-delay: 0.1s; }
-.service-card:nth-child(3) { transition-delay: 0.2s; }
-.service-card:nth-child(4) { transition-delay: 0.3s; }
-.service-card:nth-child(5) { transition-delay: 0.4s; }
-.service-card:nth-child(6) { transition-delay: 0.5s; }
+.service-card:nth-child(1) {
+    transition-delay: 0s;
+}
+
+.service-card:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.service-card:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+.service-card:nth-child(4) {
+    transition-delay: 0.3s;
+}
+
+.service-card:nth-child(5) {
+    transition-delay: 0.4s;
+}
+
+.service-card:nth-child(6) {
+    transition-delay: 0.5s;
+}
 
 /* Cascade rows stagger */
-.cascade-row:nth-child(1) { transition-delay: 0s; }
-.cascade-row:nth-child(2) { transition-delay: 0.15s; }
-.cascade-row:nth-child(3) { transition-delay: 0.3s; }
+.cascade-row:nth-child(1) {
+    transition-delay: 0s;
+}
+
+.cascade-row:nth-child(2) {
+    transition-delay: 0.15s;
+}
+
+.cascade-row:nth-child(3) {
+    transition-delay: 0.3s;
+}
 
 /* =========================================
    STICKY CTA BUTTON
@@ -2973,7 +3017,7 @@ p, li {
     z-index: 0;
 }
 
-.systems-container-card > * {
+.systems-container-card>* {
     position: relative;
     z-index: 1;
 }
@@ -3100,11 +3144,11 @@ p, li {
     z-index: 0;
 }
 
-.cascade-section > .container,
-.services-section > .container,
-.testimonials-section > .container,
-.results-section > .container,
-.anchor-section > .container {
+.cascade-section>.container,
+.services-section>.container,
+.testimonials-section>.container,
+.results-section>.container,
+.anchor-section>.container {
     position: relative;
     z-index: 1;
 }
@@ -3271,8 +3315,13 @@ p, li {
 }
 
 @keyframes scrollLine {
-    0% { top: -100%; }
-    100% { top: 100%; }
+    0% {
+        top: -100%;
+    }
+
+    100% {
+        top: 100%;
+    }
 }
 
 /* =========================================
@@ -3281,4 +3330,41 @@ p, li {
 .services-section .systems-marquee {
     margin-top: 4rem;
     padding-top: 3rem;
+}
+
+.results-slider-wrapper {
+    position: relative;
+    overflow: visible;
+}
+
+.slider-nav {
+    position: absolute;
+    z-index: 50;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: #fff;
+    color: var(--color-text-main);
+    transition: all 0.3s ease;
+}
+
+/* Positioning */
+.slider-nav.prev {
+    left: 16px;
+}
+
+.slider-nav.next {
+    right: 16px;
+}
+
+/* Purple accent hover (matches case-study-btn-xs) */
+.slider-nav:hover {
+    background: var(--color-accent);
+    /* Tyrian Purple */
+    color: #fff;
+    border-color: var(--color-accent);
+    transform: translateX(2px);
+}
+
+.hero-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
 }
