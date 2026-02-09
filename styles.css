@@ -3396,11 +3396,21 @@ li {
 
     /* --- ANCHOR SECTION --- */
     .anchor-section .anchor-grid {
-        gap: 2rem;
+        gap: 1.5rem;
+    }
+
+    .anchor-visual {
+        height: auto !important;
+        justify-content: center;
+    }
+
+    .anchor-phone-frame {
+        width: 200px !important;
+        transform: rotate(0deg) !important;
     }
 
     .anchor-content h2 {
-        font-size: 2rem !important;
+        font-size: 1.8rem !important;
         line-height: 1.2;
     }
 
@@ -3409,13 +3419,17 @@ li {
     }
 
     .anchor-content p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .anchor-case-studies {
         gap: 2rem !important;
         flex-direction: column !important;
         align-items: center !important;
+    }
+
+    .brand-name {
+        font-size: 1.5rem !important;
     }
 
     .process-item h3 {
