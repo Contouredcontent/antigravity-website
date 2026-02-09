@@ -1227,6 +1227,24 @@
                 prevent.addEventListener('click', () => showSlide(currentSlide - 1));
                 nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
             }
+
+            // Touch/swipe support for mobile
+            const sliderWrapper = document.querySelector('.results-slider-wrapper');
+            if (sliderWrapper) {
+                let touchStartX = 0;
+                let touchEndX = 0;
+                sliderWrapper.addEventListener('touchstart', (e) => {
+                    touchStartX = e.changedTouches[0].screenX;
+                }, { passive: true });
+                sliderWrapper.addEventListener('touchend', (e) => {
+                    touchEndX = e.changedTouches[0].screenX;
+                    const diff = touchStartX - touchEndX;
+                    if (Math.abs(diff) > 50) {
+                        if (diff > 0) showSlide(currentSlide + 1);
+                        else showSlide(currentSlide - 1);
+                    }
+                }, { passive: true });
+            }
         });
     </script>
 
