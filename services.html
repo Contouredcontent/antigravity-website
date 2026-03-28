@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Retention Strategy & Systems | Contoured Content</title>
+    <meta name="description"
+        content="The Contoured Method: How we turn email into your most profitable channel. Economics meets beauty consumer psychology.">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://contouredcontent.com/services.html">
+    <meta property="og:title" content="Services | Retention Strategy & Systems | Contoured Content">
+    <meta property="og:description"
+        content="The Contoured Method: How we turn email into your most profitable channel. Economics meets beauty consumer psychology.">
+    <meta property="og:image" content="https://contouredcontent.com/assets/og-image.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contoured Content | Beauty Email Services">
+    <meta name="twitter:description" content="The Contoured Method for beauty brands.">
+
+    <!-- AI EO Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Service",
+                "name": "The Contoured Method",
+                "serviceType": "Retention Marketing Strategy",
+                "description": "Acquire and retain more beauty customers through optimized email & SMS strategy using our economics and psychology framework.",
+                "provider": {
+                    "@type": "ProfessionalService",
+                    "@id": "https://contouredcontent.com/#organization",
+                    "name": "Contoured Content"
+                },
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Retention Strategy Elements",
+                    "itemListElement": [
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Email & SMS Audits"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Account Strategy & Setup"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Lifecycle Flow Development"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What is included in the Contoured Method?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "The method involves three steps: Decode (analyzing funnels, drop-off points, cohort behavior), Design (rebuilding acquisition and retention flows based on data), and Deliver (A/B testing, ESP building, and continuous monitoring)."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Why is customer retention so critical?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Because cold audiences now take 20+ touchpoints to convert, whereas customers who make a second purchase have their repeat order probability increase from 32% to 54%."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+
+    <!-- Design System Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .services-hero {
+            padding: 12rem 0 6rem;
+            text-align: center;
+        }
+
+        .services-intro {
+            max-width: 900px;
+            margin: 0 auto;
+            font-family: var(--font-heading);
+            font-size: 3.5rem;
+            line-height: 1.1;
+            color: var(--color-text-main);
+        }
+
+        .services-sub-intro {
+            max-width: 700px;
+            margin: 2rem auto 4rem;
+            color: var(--color-text-muted);
+            font-size: 1.25rem;
+            line-height: 1.6;
+        }
+
+        .retention-math {
+            padding: 8rem 0;
+        }
+
+        .math-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6rem;
+            align-items: start;
+        }
+
+        .math-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .math-stats {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .math-stat-item {
+            display: flex;
+            align-items: baseline;
+            gap: 1rem;
+        }
+
+        .math-val {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            color: var(--color-accent);
+        }
+
+        .framework-section {
+            padding: 8rem 0;
+        }
+
+        .journey-step {
+            margin-bottom: 8rem;
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 6rem;
+        }
+
+        .step-label {
+            font-family: var(--font-body);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--color-accent);
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .step-content h3 {
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .step-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .detail-box h4 {
+            font-family: var(--font-body);
+            font-weight: 700;
+            color: var(--color-text-main);
+            margin-bottom: 1rem;
+        }
+
+        .personalization-callout {
+            padding: 10rem 0;
+            text-align: center;
+        }
+
+        .callout-inner {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .callout-inner h2 {
+            font-size: 3rem;
+            margin-bottom: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Skip Link for Keyboard Accessibility -->
+    <a href="#services-hero" class="skip-link">Skip to main content</a>
+
+    <!-- HEADER -->
+    <header class="main-header" style="width: 100%;">
+        <nav class="main-nav">
+            <div class="container nav-container">
+                <a href="index.html" class="nav-logo">Contoured Content</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://calendly.com/laura-ire/30min" target="_blank" class="nav-cta">Book Your Free 5
+                            Step
+                            Audit</a></li>
+                </ul>
+                <div class="nav-hamburger" onclick="toggleMobileMenu()">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </nav>
+        <div class="nav-overlay" onclick="toggleMobileMenu()"></div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="services-hero"
+            style="min-height: 60vh; display: flex; align-items: center; justify-content: center; position: relative; padding-top: 100px;">
+            <div class="hero-text-bg"></div>
+            <div class="container" style="position: relative; z-index: 2; text-align: center;">
+                <span class="hero-label reveal">The Contoured Method</span>
+                <h1 class="reveal" style="font-size: 5rem; margin-bottom: 2rem; line-height: 1.1;">How We Turn Email
+                    Into
+                    Your <br><span class="editorial-italic text-accent">Top Retention Strategy</span></h1>
+                <p class="reveal"
+                    style="font-size: 1.25rem; max-width: 700px; margin: 0 auto 3rem; color: var(--color-text-muted);">
+                    Economic expertise meets beauty consumer psychology to deliver retention-first email strategy.</p>
+                <a href="https://calendly.com/laura-ire/30min" target="_blank" class="btn-primary reveal">Book Your Free
+                    5
+                    Step Audit</a>
+            </div>
+        </section>
+
+        <!-- DONE FOR YOU GRID (SERVICES FIRST) -->
+        <section class="services-section" id="services" style="padding: 6rem 0;">
+            <div class="container">
+                <h2 class="section-title reveal" style="text-align: center; margin-bottom: 3rem;">Done-for-You, From
+                    Set Up
+                    To <span class="editorial-italic text-accent">Send</span></h2>
+                <div class="services-grid">
+                    <div class="service-card reveal">
+                        <div class="service-header"><span class="service-icon">01</span>
+                            <h3 class="service-title">Growth Strategy</h3>
+                        </div>
+                        <p class="service-desc">We analyze your customer data against current economic conditions to
+                            identify where you're losing customers and why - then build a roadmap to fix it.</p>
+                        <div class="service-tags"><span class="service-tag">Segments</span><span
+                                class="service-tag">Trends</span><span class="service-tag">Analysis</span></div>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-header"><span class="service-icon">02</span>
+                            <h3 class="service-title">List Growth</h3>
+                        </div>
+                        <p class="service-desc">We design and test pop-ups and lead capture forms to capture
+                            visitors you
+                            already paid to reach - turning browsers into buyers.</p>
+                        <div class="service-tags"><span class="service-tag">Popups</span><span
+                                class="service-tag">Testing</span><span class="service-tag">Forms</span></div>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-header"><span class="service-icon">03</span>
+                            <h3 class="service-title">Campaigns</h3>
+                        </div>
+                        <p class="service-desc">We create and send strategic campaigns across 5 content pillars - so
+                            consumers buy at full price, not just on discount.</p>
+                        <div class="service-tags"><span class="service-tag">Calendar</span><span
+                                class="service-tag">Copy</span><span class="service-tag">Design</span></div>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-header"><span class="service-icon">04</span>
+                            <h3 class="service-title">Automations</h3>
+                        </div>
+                        <p class="service-desc">We design and build all your lifecycle flows - welcome, abandonment,
+                            post-purchase, and retention - tailored to each stage.</p>
+                        <div class="service-tags"><span class="service-tag">Acquisition</span><span
+                                class="service-tag">Retention</span><span class="service-tag">Setup</span></div>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-header"><span class="service-icon">05</span>
+                            <h3 class="service-title">SMS & Mobile</h3>
+                        </div>
+                        <p class="service-desc">We build a coordinated SMS strategy that aligns with email, stays
+                            compliant,
+                            and reaches customers at critical high-impact moments.</p>
+                        <div class="service-tags"><span class="service-tag">Strategy</span><span
+                                class="service-tag">Compliance</span><span class="service-tag">SMS</span></div>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-header"><span class="service-icon">06</span>
+                            <h3 class="service-title">Lifecycle Management</h3>
+                        </div>
+                        <p class="service-desc">We manage your account end-to-end - tracking performance and
+                            deliverability,
+                            reporting on what's working, and optimizing continuously.</p>
+                        <div class="service-tags"><span class="service-tag">Delivery</span><span
+                                class="service-tag">Reports</span><span class="service-tag">Optimization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY RETENTION MATTERS -->
+        <section class="retention-math" style="padding: 6rem 0; position: relative;">
+            <div class="container" style="max-width: 1000px;">
+                <div class="reveal" style="text-align: center; margin-bottom: 6rem;">
+                    <h2 class="section-title">Why Retention Matters <br><span class="editorial-italic">More Than
+                            Ever</span>
+                    </h2>
+                    <div class="section-subtitle">
+                        <p style="margin-bottom: 1.5rem;">In 2026, acquisition costs are crushing beauty brands.</p>
+                        <ul
+                            style="list-style: none; padding: 0; text-align: left; max-width: 500px; margin: 0 auto 2rem;">
+                            <li style="margin-bottom: 1rem;">• Acquiring a new customer costs <strong>5-7x
+                                    more</strong>
+                                than retaining an existing one<sup class="footnote-marker"><span
+                                        class="footnote-box">HBR
+                                        (2014): The Value of Keeping the Right Customers</span>¹</sup></li>
+                            <li style="margin-bottom: 1rem;">• Repeat customers spend <strong>67% more</strong> than
+                                new
+                                buyers<sup class="footnote-marker"><span class="footnote-box">Mobiloud
+                                        (2026)</span>²</sup>
+                            </li>
+                            <li style="margin-bottom: 1rem;">• Your top 10% of customers drive <strong>40%+ of
+                                    revenue</strong><sup class="footnote-marker"><span class="footnote-box">PWC
+                                        (2016): The
+                                        Next Generation Sales Force</span>³</sup>
+                            </li>
+                        </ul>
+                        <p>The second purchase is where retention is won or lost.
+                            Customers who make a second purchase are significantly more likely to continue buying,
+                            with
+                            repeat order probability increasing from 32% after the first purchase to 54% after the
+                            second<sup class="footnote-marker"><span class="footnote-box">RJMetrics: The Power of
+                                    Repeat
+                                    Order Probability</span>⁴</sup>.
+                            <br><br><span class="editorial-italic"
+                                style="color: var(--color-accent); font-weight: 500; font-size: 1.5rem;">That's
+                                where we come in.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BROWSERS BUYERS BELIEVERS -->
+        <section class="framework-section" style="padding: 6rem 0;">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 6rem;">
+                    <h2 class="section-title reveal" style="font-size: 4rem; margin-bottom: 2rem;">Browsers &rarr;
+                        Buyers
+                        &rarr; <span class="editorial-italic text-accent">Believers</span></h2>
+                    <p class="section-subtitle reveal" style="max-width: 700px; margin: 0 auto;">We
+                        structure lifecycle messaging around one clear progression: Beauty customers need different
+                        messaging at different stages in their buying journey.</p>
+                </div>
+
+                <!-- 01 BROWSERS -->
+                <div class="journey-step reveal"
+                    style="margin-bottom: 6rem; display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem;">
+                    <div class="step-meta">
+                        <span class="step-label"
+                            style="font-size: 1rem; color: var(--color-accent); font-weight: 700; display: block; margin-bottom: 1.5rem;">01
+                            — BROWSERS</span>
+                        <h3 style="font-size: 3rem; margin-bottom: 1.5rem;">The <span
+                                class="editorial-italic text-accent">Consideration</span> Gap</h3>
+                        <p class="editorial-italic" style="font-size: 1.1rem; color: var(--color-text-muted);">94%
+                            of
+                            prestige buyers also buy mass-market.</p>
+                    </div>
+                    <div class="step-content">
+                        <p style="font-size: 1.1rem; margin-bottom: 2rem;"><strong>The Reality:</strong> Cold
+                            audiences used
+                            to convert in 7 touchpoints. Now it takes 20+.</p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                            <div class="service-card reveal" style="padding: 2.5rem;">
+                                <h4 class="service-title" style="margin-bottom: 1.5rem; font-size: 1.25rem;">What
+                                    They Need
+                                </h4>
+                                <ul
+                                    style="list-style: none; padding: 0; font-size: 0.95rem; color: var(--color-text-muted);">
+                                    <li style="margin-bottom: 0.75rem;">• Trust signals and social proof</li>
+                                    <li style="margin-bottom: 0.75rem;">• Educational content that removes
+                                        objections</li>
+                                    <li>• Clear differentiation (why YOU vs. them)</li>
+                                </ul>
+                            </div>
+                            <div class="service-card reveal" style="padding: 2.5rem;">
+                                <h4 class="service-title" style="margin-bottom: 1.5rem; font-size: 1.25rem;">How We
+                                    Convert
+                                    Them</h4>
+                                <ul
+                                    style="list-style: none; padding: 0; font-size: 0.95rem; color: var(--color-text-muted);">
+                                    <li style="margin-bottom: 0.75rem;">• Optimized pop-ups that capture zero-party
+                                        data
+                                    </li>
+                                    <li style="margin-bottom: 0.75rem;">• Welcome flows designed to build trust fast
+                                    </li>
+                                    <li>• Abandonment flow messaging that removes friction</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 02 BUYERS -->
+                <div class="journey-step reveal"
+                    style="margin-bottom: 6rem; display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem;">
+                    <div class="step-meta">
+                        <span class="step-label"
+                            style="font-size: 1rem; color: var(--color-accent); font-weight: 700; display: block; margin-bottom: 1.5rem;">02
+                            — BUYERS</span>
+                        <h3 style="font-size: 3rem; margin-bottom: 1.5rem;">The <span
+                                class="editorial-italic text-accent">Fragile</span> Transition</h3>
+                        <p class="editorial-italic" style="font-size: 1.1rem; color: var(--color-text-muted);">103%
+                            average
+                            1st-order payback in beauty.</p>
+                    </div>
+                    <div class="step-content">
+                        <p style="font-size: 1.1rem; margin-bottom: 2rem;"><strong>The Opportunity:</strong> For
+                            high-LTV
+                            brands, retention during the critical 90-day window is where actual profit happens.
+                            Brands
+                            either build solid retention here or lose momentum. Get to
+                            that second purchase as fast as possible.</p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                            <div class="service-card reveal" style="padding: 2.5rem;">
+                                <h4 class="service-title" style="margin-bottom: 1.5rem; font-size: 1.25rem;">What
+                                    They Need
+                                </h4>
+                                <ul
+                                    style="list-style: none; padding: 0; font-size: 0.95rem; color: var(--color-text-muted);">
+                                    <li style="margin-bottom: 0.75rem;">• Reduce buyer's remorse: reassurance they
+                                        made the
+                                        right choice</li>
+                                    <li style="margin-bottom: 0.75rem;">• Educational content that handles
+                                        objections</li>
+                                    <li>• Value for money considering the price point</li>
+                                </ul>
+                            </div>
+                            <div class="service-card reveal" style="padding: 2.5rem;">
+                                <h4 class="service-title" style="margin-bottom: 1.5rem; font-size: 1.25rem;">How We
+                                    Retain
+                                    Them</h4>
+                                <ul
+                                    style="list-style: none; padding: 0; font-size: 0.95rem; color: var(--color-text-muted);">
+                                    <li style="margin-bottom: 0.75rem;">• Post-Purchase Sequences engineered for
+                                        trust</li>
+                                    <li style="margin-bottom: 0.75rem;">• Product education and usage guides</li>
+                                    <li style="margin-bottom: 0.75rem;">• Strategic cross-sells based on purchase
+                                        history
+                                    </li>
+                                    <li>• Replenishment timing tailored to their purchase</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 03 BELIEVERS -->
+                <div class="journey-step reveal"
+                    style="margin-bottom: 6rem; display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem;">
+                    <div class="step-meta">
+                        <span class="step-label"
+                            style="font-size: 1rem; color: var(--color-accent); font-weight: 700; display: block; margin-bottom: 1.5rem;">03
+                            — BELIEVERS</span>
+                        <h3 style="font-size: 3rem; margin-bottom: 1.5rem;">Driving <span
+                                class="editorial-italic text-accent">Advocacy</span></h3>
+                        <p class="editorial-italic" style="font-size: 1.1rem; color: var(--color-text-muted);">25.9%
+                            average
+                            repeat purchase rate.</p>
+                    </div>
+                    <div class="step-content">
+                        <p style="font-size: 1.1rem; margin-bottom: 2rem;"><strong>The Fix:</strong> Beauty's
+                            average repeat
+                            rate is below the ecommerce average (28%). Believers respond best to recognition,
+                            reward, and
+                            relevance &mdash; not repetitive discounts.</p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                            <div class="service-card reveal" style="padding: 2.5rem;">
+                                <h4 class="service-title" style="margin-bottom: 1.5rem; font-size: 1.25rem;">What
+                                    They Need
+                                </h4>
+                                <ul
+                                    style="list-style: none; padding: 0; font-size: 0.95rem; color: var(--color-text-muted);">
+                                    <li style="margin-bottom: 0.75rem;">• Recognition for their loyalty</li>
+                                    <li style="margin-bottom: 0.75rem;">• Exclusive access and early product drops
+                                    </li>
+                                    <li style="margin-bottom: 0.75rem;">• Relevant recommendations based on history
+                                    </li>
+                                    <li>• Reasons to advocate (referrals, UGC)</li>
+                                </ul>
+                            </div>
+                            <div class="service-card reveal" style="padding: 2.5rem;">
+                                <h4 class="service-title" style="margin-bottom: 1.5rem; font-size: 1.25rem;">How We
+                                    Build
+                                    Loyalty</h4>
+                                <ul
+                                    style="list-style: none; padding: 0; font-size: 0.95rem; color: var(--color-text-muted);">
+                                    <li style="margin-bottom: 0.75rem;">• VIP flows that make top customers feel
+                                        valued</li>
+                                    <li style="margin-bottom: 0.75rem;">• Advocacy activation (reviews, referrals)
+                                    </li>
+                                    <li style="margin-bottom: 0.75rem;">• 60-75 day winback for lapsed customers
+                                    </li>
+                                    <li>• Replenishment flows perfectly timed to product usage</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REAL VS FAKE PERSONALIZATION -->
+        <section class="personalization-callout"
+            style="padding: 6rem 0; background: transparent; color: var(--color-text-main); text-align: center; position: relative;">
+            <div class="container" style="max-width: 800px; position: relative; z-index: 2;">
+                <h2 class="section-title reveal">Real
+                    Personalization vs. <span class="editorial-italic text-accent">Fake Personalization</span></h2>
+                <div class="reveal" style="font-size: 1.2rem; line-height: 1.8; opacity: 0.9; text-align: left;">
+                    <p style="margin-bottom: 2rem;">Most "personalization" is pointless. Slapping
+                        <code>{{first_name}}</code> in a subject line doesn't make someone more likely to buy.
+                    </p>
+                    <p style="margin-bottom: 2rem;">Strategic
+                        personalization that drives conversions involves sending the right message to the right
+                        person
+                        based on their stage in the customer journey or what they've actually done: product
+                        interactions,
+                        lifecycle stage, and actual purchasing behavior - not arbitrary traits like age or location.
+                    </p>
+                    <p style="margin-bottom: 2rem;">Someone who purchased a $15 lip gloss needs different messaging
+                        than
+                        someone who just dropped $200 on a luxury serum. First-time discount-incentivised buyers
+                        need more
+                        education than full-price VIPs who just made their fifth order.</p>
+                    <p style="margin-bottom: 2rem;">We use rigorous data analysis and segmentation strategy to
+                        ensure the
+                        right message is
+                        delivered to the right person at the exact right time to optimize conversions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- DECODE DESIGN DELIVER -->
+        <section class="method-section" style="padding: 6rem 0; background: transparent;">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 6rem;">
+                    <h2 class="section-title reveal">Decode &rarr; Design &rarr; <span
+                            class="editorial-italic text-accent">Deliver</span></h2>
+                    <p class="section-subtitle reveal" style="max-width: 700px; margin: 0 auto;">We
+                        approach email and SMS systematically: Research first, design second, A/B testing and
+                        refinement
+                        last.</p>
+                </div>
+
+                <div class="process-list">
+                    <!-- 01 DECODE -->
+                    <div class="process-item reveal"
+                        style="margin-bottom: 6rem; display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem;">
+                        <div style="position: relative;">
+                            <span class="process-number"
+                                style="font-family: var(--font-heading); font-size: 10rem; line-height: 1; color: var(--color-accent); opacity: 0.1; position: absolute; top: -2rem; left: -1rem; z-index: 1;">01</span>
+                            <h3 style="font-size: 3rem; position: relative; z-index: 2; margin-top: 2rem;">DECODE
+                            </h3>
+                            <p class="editorial-italic" style="font-size: 1.25rem; color: var(--color-text-muted);">
+                                40% of
+                                beauty consumers try a new brand every 3 months.</p>
+                        </div>
+                        <div>
+                            <p style="font-size: 1.1rem; margin-bottom: 2rem;">Before we write a single email, we
+                                analyze
+                                where customers are getting stuck in your funnel. We cross-reference your data with
+                                current
+                                economic conditions and consumer behavior trends.</p>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                                <div class="service-card reveal" style="padding: 2.5rem;">
+                                    <ul
+                                        style="list-style: none; padding: 0; font-size: 0.95rem; color: var(--color-text-muted);">
+                                        <li style="margin-bottom: 0.75rem;">• Pop-up conversion analytics</li>
+                                        <li style="margin-bottom: 0.75rem;">• Acquisition flow drop-off points</li>
+                                        <li>• Time-to-second-purchase tracking</li>
+                                    </ul>
+                                </div>
+                                <div class="service-card reveal" style="padding: 2.5rem;">
+                                    <ul
+                                        style="list-style: none; padding: 0; font-size: 0.95rem; color: var(--color-text-muted);">
+                                        <li style="margin-bottom: 0.75rem;">• Product-specific cohort behavior</li>
+                                        <li style="margin-bottom: 0.75rem;">• Economic window recalibration</li>
+                                        <li>• Pricing sensitivity mapping</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 02 DESIGN -->
+                    <div class="process-item reveal"
+                        style="margin-bottom: 6rem; display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem;">
+                        <div style="position: relative;">
+                            <span class="process-number"
+                                style="font-family: var(--font-heading); font-size: 10rem; line-height: 1; color: var(--color-accent); opacity: 0.1; position: absolute; top: -2rem; left: -1rem; z-index: 1;">02</span>
+                            <h3 style="font-size: 3rem; position: relative; z-index: 2; margin-top: 2rem;">DESIGN
+                            </h3>
+                            <p class="editorial-italic" style="font-size: 1.25rem; color: var(--color-text-muted);">
+                                40% more
+                                revenue from personalized strategies.</p>
+                        </div>
+                        <div>
+                            <p style="font-size: 1.1rem; margin-bottom: 2rem;">Once we understand your buyers'
+                                behavior,
+                                we rebuild your acquisition and retention systems from scratch based on how your
+                                customers
+                                actually shop.</p>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                                <div class="service-card reveal" style="padding: 2.5rem;">
+                                    <ul
+                                        style="list-style: none; padding: 0; font-size: 0.95rem; color: var(--color-text-muted);">
+                                        <li style="margin-bottom: 0.75rem;">• Multi-touch Welcome Series</li>
+                                        <li>• Targeted Abandonment Nudges</li>
+                                    </ul>
+                                </div>
+                                <div class="service-card reveal" style="padding: 2.5rem;">
+                                    <ul
+                                        style="list-style: none; padding: 0; font-size: 0.95rem; color: var(--color-text-muted);">
+                                        <li style="margin-bottom: 0.75rem;">• 60-75 Day Winback</li>
+                                        <li>• Replenishment Reminders</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 03 DELIVER -->
+                    <div class="process-item reveal"
+                        style="margin-bottom: 6rem; display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem;">
+                        <div style="position: relative;">
+                            <span class="process-number"
+                                style="font-family: var(--font-heading); font-size: 10rem; line-height: 1; color: var(--color-accent); opacity: 0.1; position: absolute; top: -2rem; left: -1rem; z-index: 1;">03</span>
+                            <h3 style="font-size: 3rem; position: relative; z-index: 2; margin-top: 2rem;">DELIVER
+                            </h3>
+                            <p class="editorial-italic" style="font-size: 1.25rem; color: var(--color-text-muted);">
+                                37%
+                                higher ROI from consistent A/B testing.</p>
+                        </div>
+                        <div>
+                            <p style="font-size: 1.1rem; margin-bottom: 2rem;">We don't just set and forget. We
+                                build
+                                directly in your ESP, A/B test everything (subject lines, design, timing, and
+                                pop-ups), and
+                                monitor deliverability continuously.</p>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                                <div class="service-card reveal" style="padding: 2.5rem;">
+                                    <ul
+                                        style="list-style: none; padding: 0; font-size: 0.95rem; color: var(--color-text-muted);">
+                                        <li style="margin-bottom: 0.75rem;">• Pop-up A/B Testing</li>
+                                        <li style="margin-bottom: 0.75rem;">• Retention/Repeat Purchase Rate</li>
+                                        <li style="margin-bottom: 0.75rem;">• Time to Second Purchase</li>
+                                        <li>• Active Subscriber Health</li>
+                                    </ul>
+                                </div>
+                                <div class="service-card reveal" style="padding: 2.5rem;">
+                                    <ul
+                                        style="list-style: none; padding: 0; font-size: 0.95rem; color: var(--color-text-muted);">
+                                        <li style="margin-bottom: 0.75rem;">• LTV by Cohort Tracking</li>
+                                        <li style="margin-bottom: 0.75rem;">• AOV by Channel Analysis</li>
+                                        <li>• Behavioral Shift Response</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 6rem;">
+                    <p style="font-family: var(--font-heading); font-size: 3rem; margin-bottom: 3rem;">Ready to
+                        build a
+                        retention system <span class="editorial-italic text-accent">tailored to your brand?</span>
+                    </p>
+                    <a href="https://calendly.com/laura-ire/30min" target="_blank" class="btn-primary"
+                        style="padding: 1.5rem 4rem; font-size: 1.1rem;">Book Your Free Strategy Audit</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <!-- COMPREHENSIVE SITE FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <!-- Brand & Subscribe -->
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">Contoured Content</a>
+                    <p class="brand-subtext"
+                        style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-muted); max-width: 300px;">
+                        Specialized email &amp; SMS retention strategies for growth-focused beauty brands.</p>
+                </div>
+
+                <!-- Company Links -->
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources Links -->
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="index.html#results">Case Studies</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Links -->
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/laura-o-connor-949535272/" target="_blank"
+                                class="social-link" rel="noopener">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                </svg>
+                                LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/emailforbeauty" class="social-link" rel="noopener"
+                                target="_blank">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                                Instagram
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    &copy; 2026 Contoured Content. All rights reserved.
+                </div>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            document.querySelector('.nav-hamburger').classList.toggle('active');
+            document.querySelector('.nav-overlay').classList.toggle('active');
+        }
+
+        // Intersection Observer for Reveal Animations
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>

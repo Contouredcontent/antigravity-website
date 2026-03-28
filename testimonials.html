@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials | Contoured Content</title>
+    <meta name="description" content="See what our beauty brand partners say about working with Contoured Content.">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://contouredcontent.com/testimonials.html">
+    <meta property="og:title" content="Testimonials & Case Studies | Contoured Content">
+    <meta property="og:description"
+        content="See what our beauty brand partners say about working with Contoured Content. Results backed by our partners.">
+    <meta property="og:image" content="https://contouredcontent.com/assets/og-image.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contoured Content | Testimonials">
+    <meta name="twitter:description" content="Results backed by beauty brand partners.">
+
+    <!-- AI EO Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Contoured Content Testimonials",
+        "description": "Reviews and case studies from beauty brand partners.",
+        "url": "https://contouredcontent.com/testimonials.html",
+        "mainEntity": {
+            "@type": "Organization",
+            "@id": "https://contouredcontent.com/#organization",
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5.0",
+                "reviewCount": "3"
+            },
+            "review": [
+                {
+                    "@type": "Review",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Jo Barry"
+                    },
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5"
+                    },
+                    "reviewBody": "Within a month, our Klaviyo attributed revenue increased by 183%."
+                },
+                {
+                    "@type": "Review",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Tanya Abriol"
+                    },
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5"
+                    },
+                    "reviewBody": "The clarity in communication and turnaround is top notch."
+                },
+                {
+                    "@type": "Review",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Jordan Pearce"
+                    },
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5"
+                    },
+                    "reviewBody": "We've seen a huge increase in email subscribers and are definitely converting more sales as a result."
+                }
+            ]
+        }
+    }
+    </script>
+
+    <!-- Design System Typography: Instrument Serif + Newsreader -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .testimonials-hero {
+            padding: 12rem 0 6rem;
+            text-align: center;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 8rem;
+        }
+
+        .full-testimonial-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            padding: 3rem;
+            border-radius: 2px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+        }
+
+        .full-testimonial-card:hover {
+            transform: translateY(-8px);
+            box-shadow:
+                0 20px 50px -12px rgba(102, 2, 60, 0.15),
+                0 0 25px rgba(102, 2, 60, 0.06);
+            border-color: rgba(102, 2, 60, 0.15);
+        }
+
+        .full-testimonial-card .t-quote {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .full-testimonial-card .t-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .testimonial-img-placeholder {
+            width: 50px;
+            height: 50px;
+            background: var(--color-accent-light);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">Contoured Content</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://calendly.com/laura-ire/30min" target="_blank" class="nav-cta">Book Your Free 5 Step
+                        Audit</a></li>
+            </ul>
+            <div class="nav-hamburger" onclick="toggleMobileMenu()">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+    <div class="nav-overlay" onclick="toggleMobileMenu()"></div>
+    <main>
+        <section class="testimonials-hero"
+            style="position: relative; overflow: visible; min-height: 50vh; display: flex; align-items: center; justify-content: center; padding-top: 100px;">
+            <div class="hero-text-bg"></div>
+            <div class="container" style="position: relative; z-index: 2; text-align: center;">
+                <span class="hero-label reveal">Case Studies & Kind Words</span>
+                <h1 class="reveal" style="font-size: 5rem; margin-bottom: 2rem;">Results Backed by <br><span
+                        class="editorial-italic text-accent">Real Beauty Founders</span></h1>
+                <p class="reveal"
+                    style="color: var(--color-text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto;">Kind
+                    words
+                    from beauty brand founders and partners we've helped scale.</p>
+            </div>
+        </section>
+
+        <section style="padding: 4rem 0 10rem;">
+            <div class="container">
+                <div class="testimonials-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2.5rem;">
+                    <!-- Testimonial 1 -->
+                    <div class="full-testimonial-card reveal"
+                        style="grid-column: 1 / -1; background: var(--glass-bg); border: 1px solid var(--glass-border); padding: 3rem; border-radius: 2px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--shadow-soft); transition: all 0.4s ease;">
+                        <p class="t-quote"
+                            style="font-size: 1.15rem; line-height: 1.8; margin-bottom: 2.5rem; font-family: var(--font-body);">
+                            "I found Laura by accident, and she turned out to be the person my business needed. Before her, a few "experts" had worked on our eDM program. The advice was inconsistent, the setup was messy, and the results didn't reflect the time or cost. Laura began with a full audit. She reviewed every flow, campaign, and segment. She flagged what was broken, what was worth keeping, and what needed to be rebuilt. Her plan was clear and easy to follow.<br><br>Within a month, open rates increased by 30 percent and revenue from automations doubled. She tested, refined, and kept improving until things worked. She also uncovered major issues no one else had seen. We were emailing audiences that shouldn't have been contacted due to compliance settings, and hundreds of customers weren't syncing between Shopify and Klaviyo. She fixed every one of them. Laura worked independently but always kept me informed. Every change had context and purpose. She made sure I understood the systems so I could manage them myself. That level of transparency and respect is rare. Laura works like an extension of your team, with the precision of someone who has built dozens of programs before. Her impact has been huge. She brings structure, clarity, and real results. I trust her completely and would recommend her to anyone managing email for a growing brand."</p>
+                        <div class="t-author" style="display: flex; align-items: center; gap: 1rem;">
+                            <div class="testimonial-img-placeholder"
+                                style="width: 50px; height: 50px; background: var(--color-accent-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); color: var(--color-accent); font-weight: 700;">
+                                JB</div>
+                            <div>
+                                <h4 class="t-name" style="font-family: var(--font-heading); font-size: 1.25rem;">Jo Barry</h4>
+                                <span class="t-role"
+                                    style="font-size: 0.85rem; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Owner, Scarlet Period</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="full-testimonial-card reveal"
+                        style="background: var(--glass-bg); border: 1px solid var(--glass-border); padding: 3rem; border-radius: 2px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--shadow-soft); transition: all 0.4s ease;">
+                        <p class="t-quote"
+                            style="font-size: 1.15rem; line-height: 1.8; margin-bottom: 2.5rem; font-family: var(--font-body);">
+                            "Working with Laura was well worth it. In addition to helping with our SEO strategy, she transformed our email marketing from almost nothing into a proper system – refining our pop-up form and creating beautiful welcome emails that drove a big increase in subscribers. Since implementing her email pop-up strategy, we’ve seen a huge jump in sign-ups and are already noticing more conversions through the welcome flow. Laura made the process effortless, and we wouldn’t hesitate to recommend her if you want to improve your emails or website."</p>
+                        <div class="t-author" style="display: flex; align-items: center; gap: 1rem;">
+                            <div class="testimonial-img-placeholder"
+                                style="width: 50px; height: 50px; background: var(--color-accent-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); color: var(--color-accent); font-weight: 700;">
+                                JP</div>
+                            <div>
+                                <h4 class="t-name" style="font-family: var(--font-heading); font-size: 1.25rem;">Jordan Pearce</h4>
+                                <span class="t-role"
+                                    style="font-size: 0.85rem; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Founder,
+                                    WILDRACE</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="full-testimonial-card reveal"
+                        style="background: var(--glass-bg); border: 1px solid var(--glass-border); padding: 3rem; border-radius: 2px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--shadow-soft); transition: all 0.4s ease;">
+                        <p class="t-quote"
+                            style="font-size: 1.15rem; line-height: 1.8; margin-bottom: 2.5rem; font-family: var(--font-body);">
+                            "Laura is an absolute pleasure to work with. The clarity in communication and turn around is top notch. We absolutely love having her a part of the team!"</p>
+                        <div class="t-author" style="display: flex; align-items: center; gap: 1rem;">
+                            <div class="testimonial-img-placeholder"
+                                style="width: 50px; height: 50px; background: var(--color-accent-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); color: var(--color-accent); font-weight: 700;">
+                                TA</div>
+                            <div>
+                                <h4 class="t-name" style="font-family: var(--font-heading); font-size: 1.25rem;">Tanya Abriol</h4>
+                                <span class="t-role"
+                                    style="font-size: 0.85rem; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Celebrity Hairdresser & Co-Founder,
+                                    MiraMé</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="full-testimonial-card reveal"
+                        style="background: var(--glass-bg); border: 1px solid var(--glass-border); padding: 3rem; border-radius: 2px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--shadow-soft); transition: all 0.4s ease;">
+                        <p class="t-quote"
+                            style="font-size: 1.15rem; line-height: 1.8; margin-bottom: 2.5rem; font-family: var(--font-body);">
+                            "Working with Laura was such a seamless and creative experience. She instantly understood Naytrual Beauty's tone and visuals, bringing our email marketing to life from concept and design to copy and Klaviyo setup. Everything felt completely on-brand, elevated and effortless - she made the whole process easy and impactful. I can't wait to work with her on future campaigns!"</p>
+                        <div class="t-author" style="display: flex; align-items: center; gap: 1rem;">
+                            <div class="testimonial-img-placeholder"
+                                style="width: 50px; height: 50px; background: var(--color-accent-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); color: var(--color-accent); font-weight: 700;">
+                                NB</div>
+                            <div>
+                                <h4 class="t-name" style="font-family: var(--font-heading); font-size: 1.25rem;">Nelly Ballo</h4>
+                                <span class="t-role"
+                                    style="font-size: 0.85rem; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Owner,
+                                    Naytrual Beauty</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5 -->
+                    <div class="full-testimonial-card reveal"
+                        style="background: var(--glass-bg); border: 1px solid var(--glass-border); padding: 3rem; border-radius: 2px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--shadow-soft); transition: all 0.4s ease;">
+                        <p class="t-quote"
+                            style="font-size: 1.15rem; line-height: 1.8; margin-bottom: 2.5rem; font-family: var(--font-body);">
+                            "We have thoroughly enjoyed working with Laura! She is very responsive, fast, and thorough in both her research and follow through."</p>
+                        <div class="t-author" style="display: flex; align-items: center; gap: 1rem;">
+                            <div class="testimonial-img-placeholder"
+                                style="width: 50px; height: 50px; background: var(--color-accent-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); color: var(--color-accent); font-weight: 700;">
+                                MC</div>
+                            <div>
+                                <h4 class="t-name" style="font-family: var(--font-heading); font-size: 1.25rem;">Megan Cox</h4>
+                                <span class="t-role"
+                                    style="font-size: 0.85rem; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Owner,
+                                    Innacos Labs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <!-- COMPREHENSIVE SITE FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <!-- Brand & Subscribe -->
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">Contoured Content</a>
+                    <p class="brand-subtext"
+                        style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-muted); max-width: 300px;">
+                        Specialized email &amp; SMS retention strategies for growth-focused beauty brands.</p>
+                </div>
+
+                <!-- Company Links -->
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources Links -->
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="index.html#results">Case Studies</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Links -->
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/laura-o-connor-949535272/" target="_blank"
+                                class="social-link" rel="noopener">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                </svg>
+                                LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/emailforbeauty" class="social-link" rel="noopener"
+                                target="_blank">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                                Instagram
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    &copy; 2026 Contoured Content. All rights reserved.
+                </div>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            document.querySelector('.nav-hamburger').classList.toggle('active');
+            document.querySelector('.nav-overlay').classList.toggle('active');
+        }
+
+        // Intersection Observer for Reveal Animations
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>
